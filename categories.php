@@ -1,3 +1,10 @@
+<?php
+
+ require_once("include/DB.php");
+
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -20,13 +27,13 @@
         <h1 class="h4 text-primary mb-4">Dash</h1>
         <ul class="nav flex-column nav-pills">
           <li class="nav-item">
-            <a class="nav-link active" href="dashboard.php">
+            <a class="nav-link " href="dashboard.php">
                 <i class="bi bi-house"></i> Dashboard
             </a>
             <a class="nav-link" href="#">
                  <i class="bi bi-file-earmark-post"></i> Add Post
             </a>
-            <a class="nav-link" href="categories.php">
+            <a class="nav-link active" href="#">
                 <i class="bi bi-tags"></i> Categories
             </a>
             <a class="nav-link" href="#">
@@ -48,16 +55,21 @@
 
       <!-- Main content -->
       <div class="col-sm-10">
-        <h4>About</h4>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <h4>Manage Category</h4>
+        <div>
+            <form class="categories.php" method="post">
+                <fieldset>
+                    <div class="form-group">
+                        <label for="categoryname">Category Title:</label>
+                        <input class="form-control" type="text" name="category" id="categoryname" placeholder="Type title here">
+                    </div>
+                    <input class="btn btn-success btn-block" type="submit" value="add new category" name="submit">
+                </fieldset>
+            </form>
+        </div>
+        
+
+
       </div>
     </div><!-- /row -->
   </div><!-- /container-fluid -->

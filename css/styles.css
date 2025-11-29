@@ -1,0 +1,22 @@
+body{
+    background-color: #2f4050;
+}
+.col-sm-2{
+    background-color: #ffffff;
+}
+#side_menu a{
+    color: #9fb1c2;
+
+}
+#side_menu .active a{
+    color: #ffffff;
+    background-color: #27aae1;
+}
+
+
+#side_menu a:hover{
+    background-color: #ffffff;
+    color: #1ab394;
+    font-weight: bold;
+    display:block;
+}
